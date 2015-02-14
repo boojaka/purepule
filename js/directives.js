@@ -1,4 +1,4 @@
-app.directive('taskInput', function () {
+/*app.directive('taskInput', function () {
     return {
         restrict:'E',
         replace:true,
@@ -6,7 +6,7 @@ app.directive('taskInput', function () {
                         '<input type="submit" value="add task"/>' +
                     '</div>'
     };
-});
+});*/
 /*app.directive('task', function () {
 
     return {

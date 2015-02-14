@@ -31,11 +31,11 @@
 
 <script type="text/ng-template" id="dashboard.html">
     <form ng-submit="addTask()">
-        <task-input input-text="inputText"/>
+        <input   ng-model="inputText" type="text" placeholder="What you up to?"/>
+        <input type="submit" value="add task"/>
+        <a href="#/" style="float:right;">Log out</a>
     </form>
     <hr/>
-   zopa
-
     <div ng-repeat="task in tasks">{{task.title}}</div>
 </script>
 </body>
