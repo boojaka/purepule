@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PUREPULE- recurring task management </title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+</head>
+<body ng-app="purepule">
+<ng-view>
+</ng-view>
+
+<script type="text/ng-template" id="home.html">
+    main demo page
+    <br>
+    <a href="#/login">Login here</a>
+</script>
+
+<script type="text/ng-template" id="login.html">
+    <h1>Please login here</h1>
+    <form ng-submit="auth()">
+        <input type="text" ng-model="data.login"><br>
+        <input type="password" ng-model="data.pass"><br>
+        <input type="submit" value="Sign in">
+    </form>
+</script>
+
+<script type="text/ng-template" id="dashboard.html">
+    <form ng-submit="addTask()">
+        <task-input input-text="inputText"/>
+    </form>
+    <hr/>
+   zopa
+
+    <div ng-repeat="task in tasks">{{task.title}}</div>
+</script>
+</body>
+</html>
